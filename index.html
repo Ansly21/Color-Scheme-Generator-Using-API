@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Color Scheme Generator Using API</title>
+</head>
+<body>
+
+    <main>
+    <h1>Color Scheme Generator Using API by Ansly</h1>
+    <form id="form">
+        <input type="color" name="" id="colorBox">
+        <select name="mode" id="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome dark</option>
+            <option value="monochrome-light">Monochrome light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+
+        <button id="getColorBtn">Get color scheme</button>
+    </form>
+    <div id="container">
+    <!-- Dynamic Colors rendered -->
+
+    </div>
+
+
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

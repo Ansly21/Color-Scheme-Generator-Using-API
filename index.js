@@ -47,7 +47,10 @@ function renderHtml(data) {
        }
 
        for (let i = 0; i < valuesArray.length; i++) {
-            containerDiv.innerHTML += `<div class="colorDiv" style="background: ${valuesArray[i]}"> </div>`
+            containerDiv.innerHTML += `
+            <div class="colorDiv" style="background: ${valuesArray[i]}"> 
+            <div style="position:fixed; bottom: 20%; margin-left: 0.7rem; font-size: 1.2rem">${valuesArray[i]}</div>
+            </div>`
             
         
        }

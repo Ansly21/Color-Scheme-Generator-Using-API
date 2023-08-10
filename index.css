@@ -7,55 +7,59 @@ body {
 }
 
 main {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 2rem;
+    min-height: 100vh;
+    min-width: 800px;
 }
 
 h1 {
-    position: fixed;
-    top: 1%;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
-form {
+#form {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 10%;
 }
 
-input, select {
+#colorBox, #mode {
     margin-right: 2rem;
 }
 
-input, select, button {
+#colorBox, #mode, #getColorBtn {
     border: 2px solid #D1D5DB;
+    cursor: pointer;
 }
 
-input[type="color"] {
+#colorBox {
     width: 90px;
     height: 50px;
 }
 
-select {
+#mode {
    padding-right: 10rem;
    outline: none;
    font-size: 1.5rem;
 }
 
-button {
+#getColorBtn {
     background: none;
-    cursor: pointer;
     font-size: 1rem;
 }
 
-select, button {
+#getColorBtn:hover {
+    background-color: lightgray;
+}
+
+#colorBox, #getColorBtn {
     border-radius: 5px;
 }
+
 
 #container {
     display: flex;
@@ -66,7 +70,6 @@ select, button {
     height: 500px;
     width: 100px;
     margin-bottom: 2rem;
-
 }
 
 .hexText {
@@ -75,4 +78,32 @@ select, button {
     font-size: 1.2rem;
     position: absolute;
     bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    #colorBox {
+        width: 100%;
+        margin: 0;
+    }
+
+    #mode {
+        margin: 0;
+    }
+
+    #colorBox, #mode {
+        margin-bottom: 0.5rem;
+    }
+
+    #colorBox, #mode, #getColorBtn {
+        width: 500px;
+    }
+    
+    .colorDiv {
+        height: 400px;
+    }
 }

@@ -59,9 +59,20 @@ select, button {
 
 #container {
     display: flex;
+    position: relative;
 }
 
 .colorDiv {
     height: 500px;
     width: 100px;
+    margin-bottom: 2rem;
+
+}
+
+.hexText {
+    width: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
 }
